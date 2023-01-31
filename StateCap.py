@@ -68,26 +68,31 @@ STATES_CAPITALS = {
     'Wyoming' : 'Cheyenne',
 }
 
-
 def capital_of_Idaho():
-    # Your code here
+    for i,x in STATES_CAPITALS.items():
+        if( i == "Idaho"):
+            print(x)
     pass
 
 def all_states():
-    # Your code here
+    print(STATES_CAPITALS.keys())
     pass
 
 def all_capitals():
-    # Your code here
+    for value in STATES_CAPITALS.values():
+	    print(value)  
     pass
 
 def states_capitals_string():
-    # Your code here
+    for i,x in STATES_CAPITALS.items():
+        print(i , "~>" , x)
     pass
 
 
 
 def get_state(capital):
+    for i,x in dict(sorted(STATES_CAPITALS.items())).items():
+         print(i , "~>", x)
     pass
 
 
@@ -111,8 +116,7 @@ def test_capital_to_state_unknown():
 
 
 def main():
-    return pytest.main(__file__)
+    return pytest.main(_file_)
 
-
-if __name__ == '__main__':
+if _name_ == '_main_':
     sys.exit(main())
