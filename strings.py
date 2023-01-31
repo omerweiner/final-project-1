@@ -12,15 +12,30 @@ Example: ['mont', 'y py', 'thon', 's fl', 'ying', ' cir', 'cus']
 import pytest
 
 def no_duplicates(a_string):
-    pass
+    p = list(name.strip())
+    print(p)
+    z=list( dict.fromkeys(p))
+    print(z)
+    z.sort()
+    print(z)
+    q=""
+    for i in z:
+      q=q+i
+    print(q)
+    pass q
 
 
 def reversed_words(a_string):
-    pass
+        arr=["monty" ,"pythons" ,"flying" ,"circus"]
+        res = arr[::-1]
+        print(res)
+        pass res
 
 
 def four_char_strings(a_string):
-    pass
+    name = "monty pythons flying circus"
+    print([name[i:i+4] for i in range(0, len(name), 4)])
+    pass name
 
 
 def test_no_duplicates():
