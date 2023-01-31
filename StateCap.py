@@ -72,7 +72,7 @@ def capital_of_Idaho():
     for i,x in STATES_CAPITALS.items():
         if( i == "Idaho"):
             print(x)
-    pass
+    pass 
 
 def all_states():
     print(STATES_CAPITALS.keys())
@@ -81,7 +81,7 @@ def all_states():
 def all_capitals():
     for value in STATES_CAPITALS.values():
 	    print(value)  
-    pass
+    pass 
 
 def states_capitals_string():
     for i,x in STATES_CAPITALS.items():
